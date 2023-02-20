@@ -1,0 +1,84 @@
+$light-gray: #e5e5e5;
+$light-blue: #007aaa;
+$black: black;
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191919;
+}
+
+.App {
+    padding: 30px 40px;
+    width: 70%;
+    background-color: $light-gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: ArialMT;
+
+    .title {
+        padding-bottom: 13px;
+    }
+
+    .form-check-input[type=checkbox] {
+        box-shadow: none;
+        border-radius: unset;
+        border: 2px solid $black;
+        width: 21px;
+        height: 21px;
+        background-color: $light-gray;
+        margin: 0 12px 0 7px;
+    }
+
+    .form-check-input[type=checkbox]:checked {
+        background-color: $light-blue;
+        border: 3px solid $light-blue;
+    }
+}
+
+.upper-section {
+    display: flex;
+    gap: 72px;
+    margin-bottom: 49px;
+
+    .inline-cheboxes {
+        .inputs-container {
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    .checkbox-wrapper {
+        display: flex;
+        padding-bottom: 16px;
+
+        .form-check-input:checked {
+            box-shadow: none;
+        }
+
+        .form-check-input:not(:checked) {
+            box-shadow: none;
+            border-color: $black;
+        }
+    }
+}
+
+.bottom-section {
+    .bottom-checkboxes {
+        display: flex;
+    }
+
+    .checkbox-wrapper {
+        display: block;
+        padding-right: 10px;
+
+        .form-check-input[type=checkbox]:indeterminate {
+            background-color: $light-gray;
+            border-color: $black;
+            background: url('./icons/half.svg');
+        }
+    }
+}

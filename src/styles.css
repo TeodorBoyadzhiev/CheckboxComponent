@@ -1,0 +1,67 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191919;
+}
+
+.App {
+  padding: 30px 40px;
+  width: 70%;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-family: ArialMT;
+}
+.App .title {
+  padding-bottom: 13px;
+}
+.App .form-check-input[type=checkbox] {
+  box-shadow: none;
+  border-radius: unset;
+  border: 2px solid black;
+  width: 21px;
+  height: 21px;
+  background-color: #e5e5e5;
+  margin: 0 12px 0 7px;
+}
+.App .form-check-input[type=checkbox]:checked {
+  background-color: #007aaa;
+  border: 3px solid #007aaa;
+}
+
+.upper-section {
+  display: flex;
+  gap: 72px;
+  margin-bottom: 49px;
+}
+.upper-section .inline-cheboxes .inputs-container {
+  display: flex;
+  gap: 12px;
+}
+.upper-section .checkbox-wrapper {
+  display: flex;
+  padding-bottom: 16px;
+}
+.upper-section .checkbox-wrapper .form-check-input:checked {
+  box-shadow: none;
+}
+.upper-section .checkbox-wrapper .form-check-input:not(:checked) {
+  box-shadow: none;
+  border-color: black;
+}
+
+.bottom-section .bottom-checkboxes {
+  display: flex;
+}
+.bottom-section .checkbox-wrapper {
+  display: block;
+  padding-right: 10px;
+}
+.bottom-section .checkbox-wrapper .form-check-input[type=checkbox]:indeterminate {
+  background-color: #e5e5e5;
+  border-color: black;
+  background: url("./icons/half.svg");
+}/*# sourceMappingURL=styles.css.map */
