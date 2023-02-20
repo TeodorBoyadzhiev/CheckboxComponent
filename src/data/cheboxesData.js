@@ -16,4 +16,4 @@ let bottomCheckboxes = [
 export {
     upperCheckboxes,
     bottomCheckboxes
-}
+} 
